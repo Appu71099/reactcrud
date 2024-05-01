@@ -9,7 +9,7 @@ export default function EmployeeList() {
 
     function getEmployeeData() {
         axios.get('http://localhost:9090/api/employee/getEmployee').then((response) => {
-            // console.log(response.data.data);
+            // console.log(response.data.data); 
             setEmpDats(response.data.data)
             console.log("Employee Data: {}", empdata);
         })
