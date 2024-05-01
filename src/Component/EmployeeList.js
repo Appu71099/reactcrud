@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react'
 
 export default function EmployeeList() {
 
-    const [empdata, setEmpDats] = useState([]);
+    const [empdata, setEmpDats] = useState([]);  
 
     function getEmployeeData() {
         axios.get('http://localhost:9090/api/employee/getEmployee').then((response) => {
